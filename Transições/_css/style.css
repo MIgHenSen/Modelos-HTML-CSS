@@ -1,0 +1,59 @@
+/* Acerisco define elementos da págin em si */
+*{
+    /* Define o espaçamento externo */
+    margin: 0;
+    /* Define o espaçamento interno */
+    padding: 0;
+    /* Para garantir o formato da tela do computador, 
+    que só poderá ser alterado pelo programador */
+    box-sizing: border-box;}
+body{
+    /* Define o espaçamento externo */
+    margin: 0;
+    /* Define o espaçamento interno */
+    padding: 0;
+    /* Define o espaçamento interno acima do elemento */
+    margin-top: 50px;}
+
+/* Classes atribuídas as divs no html */
+.div1, .div2, .div3, .div4, .div5{
+    /* Conprimento dos elementos */
+    width: 100px;
+    /* Altura dos elementos */
+    height: 100px;
+    /* Fundo */
+    background: red;
+    /* Define o espaçamento externo */
+    margin: 30px;
+    /* Usado para definir tempo das animações */
+    transition: 1s 0.2s;}
+
+/* hover é uma função que se ativa quando usuário 
+colocar o mouse sobre o elemento */
+.div1:hover{
+    /* Conprimento dos elementos */
+    width: 200px;
+    /* Fundo */
+    background: black;}
+.div2:hover{
+    /* Conprimento dos elementos */
+    width: 200px;
+    /* Altura dos elementos */
+    height: 200px;
+    /* Fundo */
+    background: yellow;}
+.div3:hover{
+    /* Conprimento dos elementos */
+    width: 200px;
+    /* Altura dos elementos */
+    height: 200px;
+    /* Cria o efeito de rotação no elemento */
+    transform: rotate(350deg);}
+.div4:hover{
+    /* Cria o elemento de movimento no elemento */
+    transform: translate(30px, 30px);
+    /* Fundo */
+    background: purple;}
+.div5:hover{
+    /* Cria o efeito de diminuição no elemento */
+    transform: scale(50%);}
