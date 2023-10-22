@@ -1,0 +1,110 @@
+body{
+    /* Altura dos elementos */
+    height: 100vh;
+    /* Define o espaçamento externo */
+    margin: 0;
+    /* Define tamanho das letras */
+    font-size: 15px;
+    /* Define cor do texto */
+    color: #666;}
+
+/* Classes atribuídas as divs no html */
+.pimg1,.pimg2,.pimg3{
+    /* Define posição do elemento */
+    position: relative;
+    /* Define a transparência de um elemento */
+    opacity: 0.70;
+    /* Define posição das imagens de fundo */
+    background-position: center;
+    /* Define tamanho da imagem */
+    background-size: cover;
+    /* Define como imagem será repetida */
+    background-repeat: no-repeat;
+    /* Define se imagem é fixa ou irá se mover junto 
+    com o bloco */
+    background-attachment: fixed;}
+
+/* Classes atribuídas as divs no html */
+.pimg1{
+    /* Define imagem de fundo */
+    background-image: url(../_img/pim1.jpg);
+    /* Define altura mínima do elemento */
+    min-height: 100%;}
+
+/* Classes atribuídas as divs no html */
+.pimg2{
+    /* Define imagem de fundo */
+    background-image: url(../_img/pim2.jpg);
+    /* Define altura mínima do elemento */
+    min-height: 100%;}
+
+/* Classes atribuídas as divs no html */
+.pimg3{
+    /* Define imagem de fundo */
+    background-image: url(../_img/pim3.jpg);
+    /* Define altura mínima do elemento */
+    min-height: 100%;}
+
+/* Classes atribuídas as divs no html */
+.section{
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Define o espaçamento interno */
+    padding: 50px 80px;}
+
+/* Classes atribuídas as divs no html */
+.section-light{
+    /* Define cor de fundo */
+    background-color: #f4f4f4;
+    /* Define cor do texto */
+    color: #666;}
+
+/* Classes atribuídas as divs no html */
+.section-dark{
+    /* Define cor de fundo */
+    background-color: #282e34;
+    /* Define cor do texto */
+    color: #ddd;}
+
+/* Classes atribuídas as divs no html */
+.ptext{
+    /* Define posição do elemento */
+    position: absolute;
+    /* Define espaço acima do elemento */
+    top: 50%;
+    /* Conprimento dos elementos */
+    width: 100%;
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Define cor do texto */
+    color: #000;
+    /* Define tamanho das letras */
+    font-size: 27px;
+    /* Define espaço entre as letras */
+    letter-spacing: 8px;
+    /* Define como capitalizar o texto */
+    text-transform: uppercase;}
+
+/* Classes atribuídas as divs no html */
+.ptext .border{
+    /* Define cor de fundo */
+    background-color: #111;
+    /* Define cor do texto */
+    color: #fff;
+    /* Define o espaçamento interno */
+    padding: 5px;}
+
+/* Classes atribuídas as divs no html */
+.ptext .border .trans{
+    /* Define cor de fundo */
+    background-color: transparent;}
+
+/* @Media facilita as configurações dos elementos 
+para diferentes tamanhos de tela */
+/* Para a tela de 560 pixels de comprimento */
+@media screen and (max-width: 568px){
+    /* Classes atribuídas as divs no html */
+    .pimg1,.pimg2,.pimg3{
+        /* Define se imagem é fixa ou irá se mover junto 
+        com o bloco */
+        background-attachment: scroll;} }
