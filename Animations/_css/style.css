@@ -1,0 +1,73 @@
+/* O arquivo css define a formatação de uma página, sendo usada principalmente 
+em seu estilo */
+
+/* Acerisco define elementos da págin em si */
+*{
+    /* Define o espaçamento externo */
+    margin: 0;
+    /* Define o espaçamento interno */
+    padding: 0;
+    /* Para garantir o formato da tela do computador, 
+    que só poderá ser alterado pelo programador */
+    box-sizing: border-box;}
+body{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos, nesse caso, um abaixo do outro, em coluna */
+    flex-direction: column;
+    /* Alinha todos os elementos no centro, verticalmente */
+    align-items: center;
+    /* Alinha todos os elementos no centro, horizontalmente*/
+    justify-content: center;
+    /* Define a altura do elemento */
+    height: 100vh;
+    /* Define cor de fundo */
+    background-color: skyblue;}
+
+/* Classes são referenciadas pelo . */
+.container{
+    /* Conprimento dos elementos */
+    width: 1000px;
+    /* Altura dos elementos */
+    height: 500px;
+    /* Define borda do elemento */
+    border: solid red 2px;
+    /* Define o espaçamento externo */
+    margin: 0 auto; }
+
+/* Classes são referenciadas pelo . */
+.quadrado{
+    /* Conprimento dos elementos */
+    width: 100px;
+    /* Altura dos elementos */
+    height: 100px;
+    /* Define cor de fundo */
+    background-color: blue;
+    /* Define posição do elemento */
+    position: relative;
+    /* Define a animação de movimento das imagens */
+    animation: teste 10s infinite linear;}
+
+/* Keyframes é um desenho que define os pontos de início e fim de 
+qualquer transição suave. Nesse caso, descreve como o elemento animado 
+deveria se renderizar a um tempo dado durante a sequência de animação*/
+@keyframes teste {
+    0%{
+        /* TranslatedX move o elemento na horizontal */
+        transform: translateX(0); }
+    25%{
+        /* TranslatedX move o elemento na horizontal */
+        transform: translateX(900px);
+        /* Define cor de fundo */
+        background-color: rgb(0, 255, 17); }
+    50%{
+        /* Move o elemento nos eixos X e Y, nesse caso, o eixo x não é alterado, rotacionando
+        o elemento "rotate" */
+        transform: translate(900px, 400px) rotate(180deg); }
+    75%{
+        /* Move o elemento nos eixos X e Y, nesse caso, o eixo x não é alterado, rotacionando
+        o elemento "rotate" */
+        transform: translate(0px, 400px) rotate(180deg); }
+    100%{
+        /* Faria o elemento parar, mas animação está definida como infinita */
+        transform: translate(0px, 0px); } }
