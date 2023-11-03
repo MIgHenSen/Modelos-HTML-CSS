@@ -1,0 +1,140 @@
+/* O arquivo css define a formatação de uma página, sendo usada principalmente 
+em seu estilo */
+
+body{
+    /* Define o maior comprimento possível */
+    max-width: 1200px;
+    /* Define o espaçamento externo */
+    margin: 0 auto;
+    /* Define o espaçamento interno */
+    padding: 10px;
+    /* Define cor de fundo */
+    background-color: rgb(34, 34, 34);
+    /* Define cor do texto */
+    color: white;
+    /* Define fonte das letras */
+    font-family: poppilinsregular;}
+header{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos, 
+    nesse caso, um abaixo do outro, em coluna */
+    flex-direction: row;
+    /* Alinha todos os elementos no centro, horizontalmente*/
+    justify-content: space-between;
+    /* Alinha todos os elementos no centro, verticalmente */
+    align-items: center;}
+
+/* Classes são referenciadas pelo . */
+.titulo{
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Define tamanho da linhs */
+    line-height: 10px;}
+li{
+    /* Indica a forma que serão dispostos os elementos */
+    display: inline-block;
+    /* Define o espaçamento externo */
+    margin: 20px;}
+a{
+    /* Define decoração do texto */
+    text-decoration: none;
+    /* Define cor do texto */
+    color: white;}
+
+/* hover é uma função que se ativa quando usuário 
+colocar o mouse sobre o elemento */
+a:hover{
+    /* Define cor do texto */
+    color: lightskyblue;
+    /* Usado para definir tempo das animações */
+    transition: 0.5s;}
+
+/* Classes são referenciadas pelo . */
+.btn-conta{
+    /* Define borda do elemento */
+    border: lightskyblue solid 2px;
+    /* Arredondamento da borda */
+    border-radius: 15px;
+    /* Define o espaçamento interno */
+    padding: 8px;}
+
+/* hover é uma função que se ativa quando usuário 
+colocar o mouse sobre o elemento */
+/* Classes são referenciadas pelo . */
+.btn-conta:hover{
+    /* Define cor de fundo */
+    background-color: lightskyblue;
+    /* Define cor do texto */
+    color: green;}
+main{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+
+    /* Define como serão dispostos os elementos, 
+    nesse caso, um abaixo do outro, em coluna */
+    flex-direction: row;
+    /* Define o espaçamento externo acima do elemento */
+    margin-top: 30px;
+    /* Alinha todos os elementos no centro, horizontalmente*/
+    justify-content: space-between;}
+aside{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos, 
+    nesse caso, um abaixo do outro, em coluna */
+    flex-direction: column;}
+h2{
+    /* Define tamanho das letras */
+    font-size: 50px;
+    /* Define tamanho da linhs */
+    line-height: 5px;
+    /* Define fonte das letras */
+    font-family: poppilinsmedium;}
+span{
+    /* Define cor do texto */
+    color: lightskyblue;}
+p{
+    /* Define tamanho da linhs */
+    line-height: 20px;
+    /* Define o maior comprimento possível */
+    max-width: 500px;
+    /* Define fonte das letras */
+    font-family: poppilinslight;
+    /* Centraliza o texto horizontalmente */
+    text-align: justify;}
+img{
+    /* Conprimento dos elementos */
+    width: 500px;}
+form{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos, 
+    nesse caso, um abaixo do outro, em coluna */
+    flex-direction: column;
+    /* Conprimento dos elementos */
+    width: 60%;}
+form [type="submit"]{
+    /* Altura dos elementos */
+    height: 50px;
+    /* Conprimento dos elementos */
+    width: 50%;
+    /* Define cor de fundo */
+    background-color: lightskyblue;
+    /* Define cor do texto */
+    color: white;
+    /* Especifica intensidade da fonte */
+    font-weight: bold;}
+
+/* hover é uma função que se ativa quando usuário 
+colocar o mouse sobre o elemento */
+form [type="submit"]:hover{
+    /* Altera cursor sobre o elemento */
+    cursor: pointer;}
+input{
+    /* Altura dos elementos */
+    height: 20px;
+    /* Define o espaçamento interno */
+    padding: 10px;
+    /* Arredondamento da borda */
+    border-radius: 20px;}
