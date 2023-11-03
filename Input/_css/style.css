@@ -1,0 +1,38 @@
+/* O arquivo css define a formatação de uma página, sendo usada principalmente 
+em seu estilo */
+
+/* Acerisco define elementos da págin em si */
+*{
+    /* Define o espaçamento externo */
+    margin: 0;
+    /* Define o espaçamento interno */
+    padding: 0;
+    /* Para garantir o formato da tela do computador, 
+    que só poderá ser alterado pelo programador */
+    box-sizing: border-box;}
+body{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos, nesse caso, um abaixo do outro, em coluna */
+    flex-direction: column;
+    /* Alinha todos os elementos no centro, verticalmente */
+    align-items: center;
+    /* Alinha todos os elementos no centro, horizontalmente*/
+    justify-content: center;
+    /* Define a altura do elemento */
+    height: 100vh;
+    /* Define cor de fundo */
+    background-color: skyblue;}
+
+/* Classes são referenciadas pelo . */
+.box{
+    /* Define borda do elemento */
+    border: green solid 2px;
+    /* Define o espaçamento externo */
+    margin: 10px;
+    /* Arredondamento da borda */
+    border-radius: 10px;
+    /* Define cor de fundo */
+    background-color: lightgray;
+    /* Define o espaçamento interno */
+    padding: 10px;}
