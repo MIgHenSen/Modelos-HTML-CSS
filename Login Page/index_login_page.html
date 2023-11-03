@@ -1,0 +1,65 @@
+<!-- O HTML é o arquivo básico da web, responsãvel pela estruturação do projeto,
+definido por "html" -->
+<!DOCTYPE html>
+
+<!-- "lang" é um atributo global que define a linguagem utilizada no sistema -->
+<html lang="pt-br">
+<head>
+    <!-- "charset" informa ao navegador o formato de codificação. Nesse caso, 'UTF-8',
+    que é o mais usado na web -->
+    <meta charset="UTF-8">
+
+    <!-- Essa linha obriga o navegador a renderizar a página em sua versão mais 
+    recente -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Essa linha analisa as dimensões do dispositivo usado e as aplica 
+    para a página web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- "rel" diz a função do arquivo importado, enquanto "href" diz onde 
+    está o arquivo -->
+    <link rel="stylesheet" href="_css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Classes são usadas para definirem atributos específicos do objeto que os recebe -->
+    <!-- Recomendo uso para o css -->
+    <div class="container">
+        <form class="card">
+            <div class="header">
+                <h2>Entrar</h2>
+            </div>
+
+            <div class="main">
+                <div class="entrada-dados">
+                    <label for="usuario">E-mail</label>
+                    <!-- Input de tipo "email" permite que o navegador acesse o histórico de 
+                    contas. Required obriga o preenchimento desse campo antes do envio -->
+                    <input type="email" id="usuario" required>
+                </div>
+
+                <div class="entrada-dados">
+                    <label for="password">Senha</label>
+                    <!-- Input de tipo "password" garante segurança para o usuário, criando uma 
+                    mascara para os caracteres. Required obriga o preenchimento desse campo antes 
+                    do envio -->
+                    <input type="password" id="password" required>
+                </div>
+            </div>
+
+            <div class="footer">
+                <!-- Criação de input de tipo submit, para que se envie 
+                algo -->
+                <input type="submit" class="submit">
+
+                <!-- Nas linhas seguintes, temos âncoras, links para outras páginas web -->
+                <!-- Em "href" teríamos links de páginas, para onde seria levado 
+                se clicasse -->
+                <a href="#" class="cadastrar">Criar uma conta</a>
+                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
