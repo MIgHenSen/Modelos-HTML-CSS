@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+.tab{
+    float: left;
+    border-right: 1px solid purple;
+    background-color: lightsteelblue;
+    width: 20%;
+    height: 100%;
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px; }
+.tab button{
+    display: block;
+    background-color: inherit;
+    color: purple;
+    padding: 20px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; }
+.tab button:hover {
+    background-color: purple;
+    color: lightsteelblue; }
+.tab button.active{
+    background-color: purple;
+    color: lightsteelblue; }
+.tabcontent{
+    float: right;
+    padding: 10px;
+    background-color: beige;
+    width: 80%;
+    height: 100%; }
+.title{
+    color: blue;
+    padding: 10px; }
+.divImg{
+    display: flex; }
+.textDivImg {
+    text-align: center;
+    padding: 20px;
+    align-self: center; }
+.divImg2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; }
+.title2{
+    color: blue;
+    padding: 20px; 
+    text-align: center; }
+.champions{
+    display: flex;
+    flex-direction: column; }
+.subtitle{
+    color: rgb(90, 182, 29); }
+.divImg3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    padding-bottom: 190px; }
