@@ -1,0 +1,133 @@
+body{
+    /* Define o espaçamento externo */
+    margin: 0;
+    /* Define o espaçamento interno */
+    padding: 0;
+    /* Fundo */
+    background: skyblue;}
+
+/* Classes são referenciadas pelo . */
+.container{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Alinha todos os elementos no centro, verticalmente */
+    align-items: center;
+    /* Alinha todos os elementos no centro, horizontalmente */
+    justify-content: center;
+    /* Altura dos elementos */
+    height: 100vh;}
+
+/* Classes são referenciadas pelo . */
+.card{
+    /* Conprimento dos elementos */
+    width: 100%;
+    /* Define cor de fundo */
+    background-color: lightblue;
+    /* Define o espaçamento interno */
+    padding: 40px;
+    /* Arredondamento da borda */
+    border-radius: 10px;
+    /* Conprimento dos elementos */
+    width: 280px;
+    /* Adiciona uma camada de sombra ao redor do elemento */
+    box-shadow: 2px 2px 2px 1px blueviolet;}
+
+/* Classes são referenciadas pelo . */
+.header{
+    /* Define o espaçamento interno abaixo do elemento */
+    padding-bottom: 50px;
+    /* Define a transparência de um elemento */
+    opacity: 0.8;
+    /* Define cor do texto */
+    color: red;}
+
+/* "after" cria um elemento filho, que vem logo em seguida */
+.header::after{
+    /* Define o conteúdo do elemento */
+    content: "";
+    /* Conprimento dos elementos */
+    width: 70px;
+    /* Altura dos elementos */
+    height: 1px;
+    /* Indica a forma que serão dispostos os elementos */
+    display: block;
+    /* Define o espaçamento externo acima do elemento */
+    margin-top: -17px;}
+
+/* Classes são referenciadas pelo . */
+.main label{
+    /* Define cor do texto */
+    color: black;
+    /* Define tamanho das letras */
+    font-size: 12px;
+    /* Define a transparência de um elemento */
+    opacity: 0.8;}
+
+/* Classes são referenciadas pelo . */
+.entrada-dados{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos, 
+    nesse caso, um abaixo do outro, em coluna */
+    flex-direction: column;
+    /* Define o espaçamento interno */
+    padding: 10px 0;}
+
+/* Classes são referenciadas pelo . */
+.entrada-dados input{
+    /* Define o espaçamento externo acima do elemento */
+    margin-top: 10px;
+    /* Define o espaçamento interno */
+    padding: 5px 5px;
+    /* Define cor de fundo */
+    background-color: transparent;
+    /* Define borda do elemento */
+    border: none;
+    /* Define borda do elemento abaixo do elemento */
+    border-bottom: 2px solid purple;
+    /* Os elementos são listados e organizados hierarquicamente */
+    outline: none;
+    /* Define cor do texto */
+    color: black;}
+
+/* Classes são referenciadas pelo . */
+.footer{
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos, 
+    nesse caso, um abaixo do outro, em coluna */
+    flex-direction: column;}
+
+/* Classes são referenciadas pelo . */
+.footer .submit{
+    /* Conprimento dos elementos */
+    width: 100%;
+    /* Altura dos elementos */
+    height: 40px;
+    /* Define cor de fundo */
+    background-color: blueviolet;
+    /* Define borda do elemento */
+    border: none;
+    /* Define o espaçamento externo */
+    margin: 10px 0;
+    /* Arredondamento da borda */
+    border-radius: 15px;
+    /* Define cor do texto */
+    color: white;
+    /* Define tamanho das letras */
+    font-size: bold;
+    /* Usado para definir tempo das animações */
+    transition: 0.5s;}
+
+/* Classes são referenciadas pelo . */
+.footer a{
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Define tamanho das letras */
+    font-size: 12px;
+    /* Define a transparência de um elemento */
+    opacity: 0.8;
+    /* Define cor do texto */
+    color: purple;
+    /* Define decoração do texto */
+    text-decoration: none; }
