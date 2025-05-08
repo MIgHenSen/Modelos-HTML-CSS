@@ -1,0 +1,127 @@
+/* Acerisco define elementos da págin em si */
+*{
+    /* Para garantir o formato da tela do computador, 
+    que só poderá ser alterado pelo programador */
+    box-sizing: border-box; }
+body {
+    /* Define o espaçamento externo */
+    margin: 0;
+    /* Define o espaçamento interno */
+    padding: 0;
+    /* Define fonte das letras */
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center; }
+
+/* Classes são referenciadas pelo . */
+.carrossel {
+    /* Define posição do elemento */
+    position: relative;
+    /* Conprimento dos elementos */
+    width: 1000px;
+    /* Altura dos elementos */
+    height: 500px;
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define o espaçamento externo */
+    margin: 5px;
+    /* Define o espaçamento externo abaixo do elemento */
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+    margin-top: 40px; }
+
+/* Classes são referenciadas pelo . */
+.slide_container {
+    /* Define o espaçamento externo */
+    margin: 10px 15px;
+    /* Define posição do elemento */
+    position: relative;
+    /* Conprimento dos elementos */
+    width: 70%;
+    /* Altura dos elementos */
+    height: 500px;
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Alinha todos os elementos no centro, verticalmente */
+    align-items: center;
+
+    /* Overflow especifica quando o conteúdo de um elemento de 
+    nível de bloco deve ser cortado, exibido com barras 
+    de rolagem ou se transborda do elemento*/
+    overflow: hidden;
+    /* Arredondamento da borda */
+    border-radius: 15px; }
+
+/* Classes são referenciadas pelo . */
+.slider {
+    /* Define posição do elemento */
+    position: relative;
+    /* Conprimento dos elementos */
+    width: 100%;
+    /* Altura dos elementos */
+    height: 100%;
+    /* Indica a forma que serão dispostos os elementos */
+    display: flex;
+    /* Define como serão dispostos os elementos */
+    flex-direction: row;
+    /* Alinha todos os elementos no centro, verticalmente */
+    align-items: center;
+    /* Define a animação de movimento das imagens */
+    animation: 12s ease-in-out sliding infinite; }
+
+/* Classes são referenciadas pelo . */
+.slide {
+    /* Define posição do elemento */
+    position: relative;
+    /* Define o comprimento mínimo */
+    min-width: 100%;
+    /* Altura dos elementos */
+    height: 100%; }
+
+/* Classes são referenciadas pelo . */
+.imagem{
+    /* Conprimento dos elementos */
+    width: 100%;
+    /* Altura dos elementos */
+    height: 100%; }
+
+/* Classes são referenciadas pelo . */
+.slide img {
+    /* Conprimento dos elementos */
+    width: 100%;
+    /* Altura dos elementos */
+    height: 100%; }
+
+/* Keyframes é um desenho que define os pontos de início e fim de 
+qualquer transição suave. Nesse caso, descreve como o elemento animado 
+deveria se renderizar a um tempo dado durante a sequência de animação*/
+@keyframes sliding {
+    0% {
+        transform: translateX(0%);
+    }
+
+    5% {
+        transform: translateX(0%);
+    }
+
+    35% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    } }
