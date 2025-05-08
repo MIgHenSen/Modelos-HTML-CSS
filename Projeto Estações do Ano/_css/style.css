@@ -1,0 +1,69 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-size: 15px;
+    color: #666;}
+.pimg1,.pimg2,.pimg3,.pimg4,.pimg5{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
+.pimg1{
+    background-image: url(../_img/estações.jpeg);
+    min-height: 100%;}
+.pimg2{
+    background-image: url(../_img/cidadeverão.jpg);
+    min-height: 100%;}
+.pimg3{
+    background-image: url(../_img/cidadeoutono.jpeg);
+    min-height: 100%;}
+.pimg4{
+    background-image: url(../_img/paisageminverno.jpg);
+    min-height: 100%;}
+.pimg5{
+    background-image: url(../_img/paisagemprimavera.jpg);
+    min-height: 100%;}
+.section{
+    text-align: center;
+    padding: 50px 80px;}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;}
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 5px;}
+.ptext .border .trans{
+    background-color: transparent;}
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    width: 25px;
+    height: 30px;
+    background-color: #000;
+    text-decoration: none; }
+#btn::after {
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms; }
+#btn:hover::after {
+    margin-top:-8px; }
+@media screen and (max-width: 568px){
+    .pimg1,.pimg2,.pimg3,.pimg4{
+        background-attachment: scroll;}}
