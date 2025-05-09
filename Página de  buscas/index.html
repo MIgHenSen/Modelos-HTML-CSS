@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Busca Funcional</title>
+  <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+    input {
+      padding: 8px;
+      width: 300px;
+      margin-bottom: 10px; }
+    ul li {
+      list-style: none;
+      margin: 5px 0;
+      display: flex; }
+  </style>
+</head>
+<body>
+
+  <h2>Buscar item:</h2>
+  <input type="text" id="campoBusca" placeholder="Digite algo...">
+
+  <ul id="lista">
+    <li> 
+        <img src="./IMG/Abacate.jpg" width="300px">
+        <h1> Abacate </h1>
+    </li>
+    <li>  
+        <img src="./IMG/Abacaxi.jpg" width="300px">
+        <h1> Abacaxi </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Babaçu.jpg" width="300px">
+        <h1> Babaçu </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Banana.jpg" width="300px">
+        <h1> Banana </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Cacau.webp" width="300px">
+        <h1> Cacau </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Cereja.jpg" width="300px">
+        <h1> Cereja </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Damasco.jpg" width="300px">
+        <h1> Damasco </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Dióspiro.jpg" width="300px">
+        <h1> Dióspiro </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Esfregadinha.jpg" width="300px">
+        <h1> Esfregadinha </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Esporão-de-galo.jpg" width="300px">
+        <h1> Esporão-de-galo </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Figo.webp" width="300px">
+        <h1> Figo </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Framboesa.jpg" width="300px">
+        <h1> Framboesa </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Goiaba.webp" width="300px">
+        <h1> Goiaba </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Graviola.webp" width="300px">
+        <h1> Graviola </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Hovenia.jpg" width="300px">
+        <h1> Hovenia </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Huckleberry.jpg" width="300px">
+        <h1> Huckleberry </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Ingá.jpeg" width="300px">
+        <h1> Ingá </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Imbu.jpg" width="300px">
+        <h1> Imbu </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Jaca.webp" width="300px">
+        <h1> Jaca </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Jabuticaba.jpg" width="300px">
+        <h1> Jabuticaba </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Kiwi.jpg" width="300px">
+        <h1> Kiwi </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Kinkan.jpg" width="300px">
+        <h1> Kinkan </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Laranja.webp" width="300px">
+        <h1> Laranja </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Lima.jpg" width="300px">
+        <h1> Lima </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Maçã.webp" width="300px">
+        <h1> Maçã </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Mamão.jpg" width="300px">
+        <h1> Mamão </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Nectarina.jpg" width="300px">
+        <h1> Nectarina </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Nêspera.jpg" width="300px">
+        <h1> Nêspera </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Oiti.jpg" width="300px">
+        <h1> Oiti </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Oxicoco.jpg" width="300px">
+        <h1> Oxicoco </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Pera.jpg" width="300px">
+        <h1> Pera </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Pitanga.jpg" width="300px">
+        <h1> Pitanga </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Quina.jpg" width="300px">
+        <h1> Quina </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Quandong.jpg" width="300px">
+        <h1> Quandong </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Romã.webp" width="300px">
+        <h1> Romã </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Rambutan.jpg" width="300px">
+        <h1> Rambutan </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Sapoti.jpg" width="300px">
+        <h1> Sapoti </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Seriguela.webp" width="300px">
+        <h1> Seriguela </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Tangerina.jpg" width="300px">
+        <h1> Tangerina </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Tamarindo.webp" width="300px">
+        <h1> Tamarindo </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Uva.jpg" width="300px">
+        <h1> Uva </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Umbu.webp" width="300px">
+        <h1> Umbu </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Veludo.jpg" width="300px">
+        <h1> Veludo </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Vaccinium.webp" width="300px">
+        <h1> Vaccinium </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Watermelon.jpg" width="300px">
+        <h1> Watermelon </h1>
+    </li>
+    <li> 
+        <img src="./IMG/White sapote.jpg" width="300px">
+        <h1> White sapote </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Xixá.jpg" width="300px">
+        <h1> Xixá </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Xylocarpus.jpg" width="300px">
+        <h1> Xylocarpus </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Yangmei.jpg" width="300px">
+        <h1> Yangmei </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Yuzu.webp" width="300px">
+        <h1> Yuzu </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Zimbro.webp" width="300px">
+        <h1> Zimbro </h1>
+    </li>
+    <li> 
+        <img src="./IMG/Ziziphus.jpg" width="300px">
+        <h1> Ziziphus </h1>
+    </li>
+  </ul>
+
+  <script>
+    const campoBusca = document.getElementById('campoBusca');
+    const lista = document.getElementById('lista');
+    const itens = lista.getElementsByTagName('li');
+
+    campoBusca.addEventListener('keyup', function () {
+      const termo = campoBusca.value.toLowerCase();
+      for (let i = 0; i < itens.length; i++) {
+        const texto = itens[i].textContent.toLowerCase();
+        itens[i].style.display = texto.includes(termo) ? '' : 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
